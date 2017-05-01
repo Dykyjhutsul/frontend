@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Обертання
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var A,B, sum=0;
+        A=+prompt("Введіть число А","1");
+        B=+prompt("Введіть число B>A",A+1);  //як тут правильно написати, щоб замість А в подвійних дапках
+        //стояло вже не самий символ, а цифрове значення
+        while (B<=A){
+            B=+prompt("Введіть число B>A",A+1);
+        }
+        for(var i=A ;i<=B; i++){
+            sum+=i;
+        }
+        document.write("Сума із всього діапазону рівна: ",sum, "<br>");
+        document.write("Непарні числа із діапазону" , A, "  до  ", B, "<br>");
+        for(var i=A ;i<=B; i++){
+            if(i%2==1){
+                document.writeln(i,"<br>");
+            }
+        }
+
+    </script>
+</body>
