@@ -1,0 +1,45 @@
+body{
+    background: #fff5ff;
+}
+.box {
+    background: #8b0529;
+    width: 300px;
+    padding: 0;
+    border: 2px solid #000;
+    margin: 1%;
+    list-style: none;
+    transition: width 4s cubic-bezier(.94,1.5,0,-0.2), background 5s;
+
+
+}
+
+li {
+    position: relative;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.box:hover {
+    background: -moz-linear-gradient( top, yellow, darkblue);
+    width: 500px;
+    transform:translateX(10px);
+}
+
+p{
+    color: indigo;
+    font-family: "Comic Sans MS";
+    font-size: 100px;
+    letter-spacing: 20px;
+    text-indent: 150px;
+}

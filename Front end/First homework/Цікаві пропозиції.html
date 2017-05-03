@@ -5,61 +5,27 @@
         <title>
             Цікаві пропозиції
         </title>
-        <style type="text/css">
-            body{
-                background: #00c7ff;
-            }
-            .box {
-                background: #8b0529;
-                width: 300px;
-                padding: 0;
-                border: 2px solid #000;
-                margin: 1%;
-                list-style: none;
-            }
-            a:visited {
-                color: #000;
-            }
-            a:link {
-                color: #FF0000;
-            }
-            a{
-                text-decoration: none
-            }
-            .box.present{
-                background: #000;
-                color: darkblue;
-            }
-            li+li+ul{
-                background: #f9ff3d;
-            }
-            p{
-                color: indigo;
-                font-family: "Comic Sans MS";
-                font-size: 100px;
-                letter-spacing: 20px;
-                text-indent: 150px;
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <ul>
-            <li class="box"> <a href="Меню.html"> Головна сторінка</a> </li>
-            <li class="box"> <a href="Посилання/Новини.html" > Новини</a> </li>
-            <li class="box"> <a href="Цікаві%20пропозиції.html" class="box present"> Цікаві пропозиції</a> </li>
+        <form>
             <ul>
-                <li class="box"> <a href="Посилання/Майстер%20класи.html" > Майстер класи</a> </li>
-                <li class="box"> <a href="Посилання/Спортивні%20заходи.html" > Змагання</a> </li>
+                <a href="Меню.html"><li class="box"> Головна сторінка </li></a>
+                <a href="Новини.html" > <li class="box"> Новини </li></a>
+                <a href="Цікаві%20пропозиції.html"><li class="box"> Цікаві пропозиції</li></a>
                 <ul>
-                    <li class="box"> <a href="Посилання/Марафон.html" > Марафон</a> </li>
-                    <li class="box"> <a href="Посилання/Тріатлон.html" > Тріатлон</a> </li>
+                    <a href="Майстер%20класи.html" > <li class="box">Майстер класи</li></a>
+                    <a href="Спортивні%20заходи.html" > <li class="box">Змагання</li></a>
+                    <ul>
+                        <a href="Марафон.html" > <li class="box"> Марафон</li></a>
+                        <a href="Тріатлон.html" > <li class="box"> Тріатлон</li></a>
+                    </ul>
+                    <a href="Концерти.html" ><li class="box">  Концерти  </li></a>
                 </ul>
-                <li class="box"> <a href="Посилання/Концерти.html" > Концерти</a> </li>
+                <a href="Про%20нас.html"><li class="box">  Про нас </li></a>
+                <a href="Контакти.html"><li class="box">  Контакти</li></a>
             </ul>
-            <li class="box"> <a href="Посилання/Про%20нас.html"> Про нас</a> </li>
-            <li class="box"> <a href="Посилання/Контакти.html"> Контакти</a> </li>
-        </ul>
+        </form>
         <p>
             Цікаві пропозиції
         </p>
