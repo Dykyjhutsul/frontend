@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+</head>
+<body>
+    <script>
+        var number =+prompt('Введіть число',0);
+
+        function PositiveOrNegative(number)
+        {
+            if(number>0)
+            {
+                return 'Додатнє';
+            }else if(number<0)
+            {
+                return 'Відємне';
+            }else
+            {
+                return 'Нуль';
+            }
+        }
+
+        function IsSimple(number)
+        {
+            if(number==2||number==3||number==5||number==7||number==11)
+            {
+                return 'Просте число';
+            }
+            else if(number%2!=0&&number%3!=0&&number%5!=0&&number%7!=0&&number%11!=0)
+            {
+                return 'Просте число';
+            }else
+                {
+                    return 'Не просте число';
+                }
+        }
+
+        function IsDivideWithoutRemainder(number)
+        {//тут код явно треба оптимізувати
+            var d2, d3, d5, d6, d9;
+            if(number%2==0)
+            {
+                d2='Ділиться на 2 без остачі';
+            }else
+                {
+                    d2= 'Ділиться на 2 з остачею';
+                }
+            if(number%3==0)
+            {
+                d3='Ділиться на 3 без остачі';
+            }else
+            {
+                d3= 'Ділиться на 3 з остачею';
+            }
+            if(number%5==0)
+            {
+                d5='Ділиться на 5 без остачі';
+            }else
+            {
+                d5= 'Ділиться на 5 з остачею';
+            }
+            if(number%6==0)
+            {
+                d6='Ділиться на 6 без остачі';
+            }else
+            {
+                d6= 'Ділиться на 6 з остачею';
+            }
+            if(number%9==0)
+            {
+                d9='Ділиться на 9 без остачі';
+            }else
+            {
+                d9= 'Ділиться на 9 з остачею';
+            }
+            return d2+ '<br>' + d3+ '<br>' +d5 + '<br>' +d6 + '<br>' + d9;
+        }
+        document.write(PositiveOrNegative(number) + '<br>' + IsSimple(number)+ '<br>' + IsDivideWithoutRemainder(number));
+
+    </script>
+</body>
+</html>

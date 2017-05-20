@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+</head>
+<body>
+    <script>
+        function ADD(a,b)
+        {
+            return a+b;
+        }
+        function Different(a,b)
+        {
+            return a-b;
+        }
+        function Multiple(a,b)
+        {
+            return a*b;
+        }
+        function Divide(a,b)
+        {
+            return b==0 ? NaN : a/b;
+        }
+        var a = +prompt('Введіть перше число',0), b = +prompt('Введіть друге число',0);
+        document.write(ADD(a,b)+'<br>' + Different(a,b)+'<br>' + Multiple(a,b)+'<br>' + Divide(a,b));
+    </script>
+</body>
+</html>

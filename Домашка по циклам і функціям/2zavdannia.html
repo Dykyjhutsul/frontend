@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Second</title>
+</head>
+<body>
+    <script>
+        function Priamokutnyk() {
+            var array=[["*","*","*","*","*","*","*","*"],
+                ["*","&nbsp","&nbsp","&nbsp","&nbsp","&nbsp","&nbsp","*"],
+                ["*","&nbsp","&nbsp","&nbsp","&nbsp","&nbsp","&nbsp","*"],
+                ["*","&nbsp","&nbsp","&nbsp","&nbsp","&nbsp","&nbsp","*"],
+                ["*","*","*","*","*","*","*","*"]
+            ];
+            for(var i=0;i<5;i++)
+            {
+                for(var j=0;j<8;j++)
+                {
+                    document.write(array[i][j]);
+                    if(array[i][j]=="&nbsp")
+                    {
+                        document.write(array[i][j]);
+                    }
+                    if(j==7)
+                    {
+                        document.write("<br>");
+                    }
+                }
+            }
+            document.write("<br><br><br><br>");
+        }
+
+        //////////////////////////////////////////////
+        function PrintZirochka() {
+            document.write("*");
+        }
+
+        function PrintProbel() {
+            document.write("&nbsp&nbsp");
+        }
+        
+        function Tryckutnyk() {
+
+            
+            var iterator=10;
+            for(var i=0;i<10;i++)
+            {
+                iterator--;
+                for(var j=0;j<10;j++)
+                {
+                    if(j<iterator){
+                        PrintZirochka();
+                    }
+                    else {
+                        PrintProbel();
+                    }
+                    if(j==9)
+                    {
+                        document.write("<br>");
+                    }
+                }
+            }
+        }
+        
+        function Rivnostoronyj() {
+            
+        }
+        
+        Priamokutnyk();
+        Tryckutnyk();
+
+    </script>
+</body>
+</html>
