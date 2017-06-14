@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <script>
+        but.onclick=function () {
+            var p = document.createElement('p');
+            p.innerHTML = "Text";
+            if(document.getElementsByTagName('p').length>=10){
+                document.removeChild('p');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="">
+        <input type="submit" id="but" name="but" value="Додати параграф">
+    </form>
+</body>
+</html>

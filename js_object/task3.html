@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <style>
+        div{
+            margin: 30px 100px 50px 100px;
+        }
+        input{
+            padding-left: 30px;
+            margin-left: 10px;
+            padding-right: 30px;
+        }
+    </style>
+    <script>
+        function Button1() {
+            document.getElementsByTagName('div').style.border = "2px double black";
+            document.getElementsByTagName('p').style.border = "1px double black";
+            document.getElementsByTagName('a').style.border = "1px double black";
+        };
+        but2.onclick = function () {
+            document.getElementsByTagName('div').style.border = "1px double black";
+            document.getElementsByTagName('p').style.border = "2px double red";
+            document.getElementsByTagName('a').style.border = "1px double black";
+        };
+
+    </script>
+</head>
+<body>
+    <div>
+        <form action="" method="POST" id="form">
+            <input type="submit" id="but1" value="Вибрати усі div" name="but1" onclick="Button1()" >
+            <input type="submit" id="but2" value="Вибрати усі параграфи" name="but2" >
+            <input type="submit" id="but3" value="Вибрати усі силки" name="but3"
+                   onclick="
+                   document.getElementsByTagName('div').style.border = '1px double black';
+                   document.getElementsByTagName('p').style.border = '1px double blue';
+                   document.getElementsByTagName('a').style.border = '2px double blue';
+                   ">
+        </form>
+    </div>
+    <div>
+        <p>Синяк</p>
+        <p><a href="https://i.ytimg.com/vi/_-WoVa1acsY/maxresdefault.jpg">Хомяк</a></p>
+        <p><a href="http://imaginetravel.com.ua/application/view/media/imagestore/06.2014/2276576.jpg">Говерла</a></p>
+        <p>Горган</p>
+    </div>
+    <div>
+        <p>Косів</p>
+        <p><a href="http://www.tam-ua.com/wp-content/uploads/2014/08/yaremcha5.jpg">Яремче</a></p>
+        <p><a href="https://kolomyia.org/sites/default/files/images/company/195494/gallery-195494.jpg">Коломия</a></p>
+    </div>
+    <div>
+        <p><a href="https://upload.wikimedia.org/wikipedia/commons/2/25/%D0%9F%D1%80%D1%83%D1%82.JPG">Прут</a></p>
+        <p>Черемош</p>
+    </div>
+</body>
+</html>

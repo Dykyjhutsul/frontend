@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <script>
+        function CreateHuman(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        
+        var array = function CreateArray() {
+            var count=+prompt('Введіть к-сть людей',0);
+            //document.writeln(count);
+            var society= new Array();
+            for(var i=0;i<count;i++){
+                society[i]=(
+                    CreateHuman(
+                        prompt("Введіть імя " + (i+1) + "людини","Анонім"),
+                        +prompt("Введіть вік " + (i+1) + "людини",0)
+                    )
+                );
+            }
+            return society;
+        }
+
+        function ShowSociety(society) {
+            for(var i=0; i<society.length;i++){
+                document.write("<p> " + society[i].name,society[i].age + "</p>");
+            }
+        }
+
+        function Sort(society){
+            var swapped = true;
+            var z = 0;
+            while (swapped){
+                swapped = false;
+                for (var i = 0; i < society.length - 1 - z; i++) {
+                    if (society[i].age > society[i + 1].age) {
+                        var a = society[i].age;
+                        society[i].age = society[i + 1].age;
+                        society[i + 1].age = a;
+                        swapped = true;
+                    }
+                }
+                z++;
+            }
+        }
+
+        var society = array();
+        ShowSociety(society);
+        society=Sort(society);
+        ShowSociety(society);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
