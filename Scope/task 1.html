@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Task 1</title>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <script>
+        function Initialize(array,max,min) {
+            for(var i=0;i<array.length;i++){
+                array[i]=Math.floor(Math.random() * 11);
+            }
+            return array;
+
+        }
+        
+        function getOddNumber(array) {
+            var newArray=[], j=0;
+            for(var i=0;i<array.length;i++){
+                if(array[i]%2==1){
+                    newArray[j]=array[i];
+                    j++;
+                }
+            }
+            return newArray;
+        }
+
+        function getMaxNumber(array) {
+            var max=array[0];
+            for(var i=0;i<array.length;i++){
+                if(array[i]>max){
+                    max=array[i];
+                }
+            }
+            return max;
+        }
+
+        function getMinNumber(array) {
+            var min=array[0];
+            for(var i=0;i<array.length;i++){
+                if(array[i]<min){
+                    min=array[i];
+                }
+            }
+            return min;
+        }
+
+        function getSum(array) {
+            var sum=0;
+            for(var i=0;i<array.length;i++){
+                sum=sum+array[i];
+            }
+            return sum;
+        }
+
+        function getArithmeticMean(array) {
+            var sum=0;
+            for(var i=0;i<array.length;i++){
+                sum=sum+i;
+            }
+            return getSum(array)/sum;
+        }
+
+        var array = new Array(10);
+        array=Initialize(array,20,0);
+        document.write(array.length+'  Довжина масива' + '<br>');
+        document.write(array+'  Масив'+ '<br>');
+        document.write(getSum(array)+'  Сума масива'+ '<br>');
+        document.write(getMaxNumber(array)+'  Максимальне число масива'+ '<br>');
+        document.write(getMinNumber(array)+'  Мінімальне число масива'+ '<br>');
+        document.write(getArithmeticMean(array)+'  Середнє арифметичне масива'+ '<br>');
+        document.write(getOddNumber(array)+'  НЕпарні числа масива'+ '<br>');
+
+    </script>
+</body>
+</html>
