@@ -11,7 +11,7 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: inherit;
-    background: white;
+    background: #fff2ef;
 }
 
 #header div{
@@ -70,7 +70,7 @@ h2{
 
     height: 500px;
     padding: 40px 40px 40px 40px;
-    background: rgb(255, 200, 167);
+    background: rgb(255, 221, 207);
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -113,7 +113,7 @@ h2{
     //border: 2px solid black;
     height: 220px;
     padding: 40px 40px 40px 40px;
-    background: rgb(205, 255, 201);
+    background: rgb(218, 255, 216);
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -124,7 +124,7 @@ h2{
     //border: 2px solid black;
     height: 700px;
     padding: 40px 40px 40px 40px;
-    background: rgb(199, 196, 255);
+    background: rgb(216, 216, 255);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -169,7 +169,7 @@ h2{
     //border: 2px solid black;
     height: 500px;
     padding: 40px 40px 40px 40px;
-    background: rgb(239, 241, 181);
+    background: rgb(241, 239, 201);
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -180,7 +180,7 @@ h2{
     height: 700px;
 
     padding: 40px 40px 40px 40px;
-    background: #d6ffdf;
+    background: #e1ffe6;
 }
 
 form{
@@ -221,17 +221,17 @@ form input{
 
 }
 
-
+input[type=button] {
+    width: 20em;  height: 4em;
+}
 
 
 #contracts{
 
     //border: 2px solid #ff0000;
-    height: 500px;
+    height: 400px;
     padding: 40px 40px 40px 40px;
-    background: #ffd6fe;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+    background: #ffdffd;
+
 }
 
