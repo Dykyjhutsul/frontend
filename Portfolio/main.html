@@ -10,34 +10,34 @@
 <body>
         <div id="header">
             <div id="menu">
-                <div>
+                <div onclick="MoveToHome()">
                     <b>Home page</b>
                 </div>
-                <div>
+                <div onclick="MoveToGeneralInfomation()">
                     <b>General information</b>
                 </div>
-                <div>
+                <div onclick="MoveToKnowledge()">
                     <b >Knowledge & experience</b>
                 </div>
-                <div>
+                <div onclick="MoveToMotivationList()">
                     <b>Motivational letter</b>
                 </div>
-                <div>
+                <div onclick="MoveToFeedback()">
                     <b>Feedback</b>
                 </div>
-                <div>
+                <div onclick="MoveToContact()">
                     <b>Contact</b>
                 </div>
             </div>
             <div id="links">
                 <div class="link1">
-                    <a href="https://www.facebook.com/profile.php?id=100005656142572">
-                        <img class="facebook" src="facebook-logo-png-9.png">
+                    <a href="https://www.facebook.com/profile.php?id=100005656142572" target="_blank" >
+                        <img class="facebook" src="picture/facebook-logo-png-9.png">
                     </a>
                 </div>
                 <div class="link2">
-                    <a href="https://www.instagram.com/dykyj_hutsul/">
-                        <img class="instagram" src="580b57fcd9996e24bc43c521.png">
+                    <a target="_blank" href="https://www.instagram.com/dykyj_hutsul/">
+                        <img class="instagram" src="picture/580b57fcd9996e24bc43c521.png">
                     </a>
                 </div>
             </div>
@@ -45,7 +45,7 @@
         <div id="face">
 
             <div class="block1">
-                <img src="IMG_1998.jpg">
+                <img src="picture/IMG_1998.jpg">
             </div>
             <div class="block2">
                 <span>
@@ -55,7 +55,9 @@
             </div>
         </div>
         <div id="general_inform">
+
             <div><h2 align="center">General information</h2></div>
+
             <div>
                 Hello! My name is Denis. I'm 20 years old. Originally from the city of Kolomyia. At the moment I live in Kiev.
                 I study at the 4th year at the National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'
@@ -64,6 +66,7 @@
             </div>
         </div>
         <div id="knowledge">
+
             <div><h2 align="center">Knowledge & experience</h2></div>
             <div class="b">
                 <ul> I know such programming languages and technology:
@@ -77,29 +80,39 @@
                     <li>MySQL</li>
                     <li>Wordpress</li>
                 </ul>
+
                 For more than 3 years I have been engaged in volunteer activities in the organization of the Iron Volunteers of Ukraine.
-                I helped organize mass events to go in such as <a href="http://www.racenation.ua/home/">Race Nation</a>,
-                <a href="http://kyivmarathon.org/">Wizz Air Kyiv City Marathon</a> etc.<br>
+                I helped organize mass events to go in such as <a target="_blank" href="http://www.racenation.ua/home/">Race Nation</a>,
+                <a target="_blank" href="http://kyivmarathon.org/">Wizz Air Kyiv City Marathon</a> etc.<br>
 
                 I worked for Run Ukraine during 1 year, where I was involved in work related to
                 communication with participants of sports races.<br>
 
                 I have an Upper-Intermediate of English. I am fluent in Polish. <br>
 
-                There are some examples of my works: <a href="http://houseofmusic.com.ua/">House of music</a>,
-                <a href="https://ironvolunteers.com.ua/"> Iron Volunteers Ukraine</a>
+                There are some examples of my works: <a target="_blank"  href="http://houseofmusic.com.ua/">House of music</a>,
+                <a target="_blank"  href="https://ironvolunteers.com.ua/"> Iron Volunteers Ukraine</a>
 
             </div>
-            <div id="box" onclick="showDiv()">
+            <div id="box" onclick="showDiv()" align="center">
                 <b>Show Certificates</b>
             </div>
-            <div class="hidden" onclick="closeDiv()">
-                I worked for Run Ukraine during 1 year, where I was involved in work related to
-                communication with participants of sports races.<br>
+            <div class="hidden">
+                <div class="back" onclick="BackPicture()">
+                    <img src="picture/Button-Previous-icon.png" width="100px">
+                </div>
+                <div class="picture">
+                    <!--<img src="picture/9.jpg" width="100%" >    -->
+                    <img class="pic" src="picture/9.jpg" height="100%" >
+                </div>
+                <div class="next" onclick="NextPicture()">
+                    <img src="picture/Hopstarter-Button-Button-Next.ico" width="100px">
+                </div>
+
             </div>
 
         </div>
-        <!--<div id="motivation">
+        <div id="motivation">
             <h2 align="center">Motivation list</h2>
         </div>
         <div id="contact_form">
@@ -133,6 +146,6 @@
                     Address: st. Yangela 16, Kyiv, Ukraine
                 </div>
             </h2>
-        </div>-->
+        </div>
 </body>
 </html>
