@@ -115,52 +115,53 @@ h2{
     padding: 40px 40px 40px 40px;
     background: rgb(218, 255, 216);
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    text-align: justify;
 }
 
 #knowledge{
 
     //border: 2px solid black;
-    height: 700px;
+    height: auto;
     padding: 40px 40px 40px 40px;
     background: rgb(216, 216, 255);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-content: stretch;
     align-items: baseline;
+
 }
 
 #knowledge div{
-    width: 44%;
+    width: 95%;
     //border: 2px solid black;
-    padding: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
 }
 
-.b1{
-    order: 1;
-}
 
-.b2{
-    order: 2;
-}
-
-.b3{
-    order: 3;
-}
-
-.b4{
-    order: 4;
-}
-
-.b5{
-    order: 5;
+.b{
+    text-align: justify;
 }
 
 .certificate{
     font-style: oblique;
+}
+
+
+#box {
+    height:auto;
+    background: #000000;
+    color:#fff;
+    cursor:pointer;
+
+}
+
+.hidden {
+    height:0px;
+    overflow: hidden;
 }
 
 
@@ -173,6 +174,8 @@ h2{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+    opacity: 0.7;
 }
 
 #contact_form{

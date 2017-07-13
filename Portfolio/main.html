@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Denys Hrytchuk</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+
 </head>
 <body>
         <div id="header">
@@ -53,7 +55,7 @@
             </div>
         </div>
         <div id="general_inform">
-            <h2 align="center">General information</h2>
+            <div><h2 align="center">General information</h2></div>
             <div>
                 Hello! My name is Denis. I'm 20 years old. Originally from the city of Kolomyia. At the moment I live in Kiev.
                 I study at the 4th year at the National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'
@@ -62,8 +64,8 @@
             </div>
         </div>
         <div id="knowledge">
-            <h2 align="center">Knowledge & experience</h2>
-            <div class="b1">
+            <div><h2 align="center">Knowledge & experience</h2></div>
+            <div class="b">
                 <ul> I know such programming languages and technology:
                     <li>C</li>
                     <li>C++</li>
@@ -75,28 +77,29 @@
                     <li>MySQL</li>
                     <li>Wordpress</li>
                 </ul>
-            </div>
-            <div class="b5">
-                I have passed many online courses. Certificates you can see here. <b><span class="certificate">Show Certificates</span></b>
-            </div>
-            <div class="b3">
                 For more than 3 years I have been engaged in volunteer activities in the organization of the Iron Volunteers of Ukraine.
                 I helped organize mass events to go in such as <a href="http://www.racenation.ua/home/">Race Nation</a>,
-                <a href="http://kyivmarathon.org/">Wizz Air Kyiv City Marathon</a> etc.
+                <a href="http://kyivmarathon.org/">Wizz Air Kyiv City Marathon</a> etc.<br>
 
                 I worked for Run Ukraine during 1 year, where I was involved in work related to
                 communication with participants of sports races.<br>
-                <b><span class="certificate">Show Certificates</span></b>
-            </div>
-            <div class="b4">
-                I have an Upper-Intermediate of English. I am fluent in Polish. <b><span class="certificate">Show Certificates</span></b>
-            </div>
-            <div class="b2">
+
+                I have an Upper-Intermediate of English. I am fluent in Polish. <br>
+
                 There are some examples of my works: <a href="http://houseofmusic.com.ua/">House of music</a>,
                 <a href="https://ironvolunteers.com.ua/"> Iron Volunteers Ukraine</a>
+
             </div>
+            <div id="box" onclick="showDiv()">
+                <b>Show Certificates</b>
+            </div>
+            <div class="hidden" onclick="closeDiv()">
+                I worked for Run Ukraine during 1 year, where I was involved in work related to
+                communication with participants of sports races.<br>
+            </div>
+
         </div>
-        <div id="motivation">
+        <!--<div id="motivation">
             <h2 align="center">Motivation list</h2>
         </div>
         <div id="contact_form">
@@ -130,6 +133,6 @@
                     Address: st. Yangela 16, Kyiv, Ukraine
                 </div>
             </h2>
-        </div>
+        </div>-->
 </body>
 </html>
