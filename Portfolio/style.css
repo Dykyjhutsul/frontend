@@ -1,7 +1,8 @@
 body{
     background: rgb(0, 0, 0);
     font-family: Garamond, Dialog, Georgia;
-    font-size: 30px;
+    font-size: 20px;
+    cursor: default;
 }
 
 #header{
@@ -10,7 +11,7 @@ body{
     width: 99%;
     display:flex;
     flex-direction: row;
-    justify-content: inherit;
+    justify-content: space-between;
     background: #fff2ef;
     position: fixed;
     z-index: 10;
@@ -33,25 +34,37 @@ body{
     width: 28%;
     border: 1px solid  black;
     text-align: center;
-    font-size: 14px;
-    line-height: 3.2em;
-    background: rgba(255, 0, 0, 0.68);
+    font-size: 13px;
+    line-height: 3.7em;
+    overflow: hidden;
+    background: rgba(255, 139, 141, 0.68);
+    cursor: pointer;
+    //min-height: 90px;
 }
 
-#menu div .toobig{
-    line-height: 1.9em;
-}
+
+
 
 #links{
-    width: 23%;
+    border: 2px solid black;
+    height: 50px;
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    background: #ff8b8d;
+
 
 }
 
 #links div{
-    width: 20%;
+    text-align: left;
+    width: 60px;
+}
+ .link1 img{
+    height:90%;
+}
+
+.link2 img{
+    height: 84%;
 }
 
 .facebook{
@@ -74,6 +87,9 @@ h2{
     margin-top: 45px;
     padding: 40px 40px 40px 40px;
     background: rgb(255, 221, 207);
+    //background-size: 100% 100%;
+    //background-image: url("picture/IMG_1523-2.jpg");
+    //filter: contrast(120%) grayscale(50%);
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -111,6 +127,10 @@ h2{
     border-radius: 150px;
 }
 
+.pic{
+    height: 100%;
+}
+
 #general_inform{
 
     //border: 2px solid black;
@@ -129,6 +149,7 @@ h2{
     height: auto;
     padding: 40px 40px 40px 40px;
     background: rgb(216, 216, 255);
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -210,6 +231,9 @@ h2{
 
 }
 
+.back img{
+    width:100px;
+}
 .next{
 
     //border: 1px solid black;
@@ -217,7 +241,9 @@ h2{
     text-align: right;
     flex: 4 5 auto;
 }
-
+.next img{
+    width:100px;
+}
 #motivation{
 
     //border: 2px solid black;
@@ -233,10 +259,13 @@ h2{
 
 #contact_form{
     //border: 2px solid black;
-    height: 700px;
+    height: 500px;
 
     padding: 40px 40px 40px 40px;
-    background: #e1ffe6;
+    background: #b6ffae;
+    //background-image: url("picture/IMG_2094.jpg");
+    //background-size: cover;
+    filter: contrast(120%) grayscale(50%);
 }
 
 form{
@@ -270,25 +299,51 @@ form input{
     position:absolute;
     left: 350px;
 
-    height: 60px;
+    height: 30px;
     border-radius: 7px; //закругление углов (общее)
     -webkit-border-radius: 3px; //закругление углов (Google Chrome)
     -moz-border-radius: 3px; //закругление углов (FireFox)
 
 }
 
+input{
+    width: 35em;
+}
+
 input[type=button] {
-    width: 20em;  height: 4em;
+    width: 30em;
+    height: 4em;
 }
 
 
 #contracts{
-
     //border: 2px solid #ff0000;
-    height: 400px;
+    height: 600px;
     padding: 40px 40px 40px 40px;
     background: #ffdffd;
+    //background-size: cover;
+    //background-image: url("picture/IMG_1487.jpg");
+
+
 
 }
 
+
+.head{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    -ms-flex-align:  center;
+    align-items: center;
+}
 

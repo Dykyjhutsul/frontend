@@ -11,16 +11,16 @@
         <div id="header">
             <div id="menu">
                 <div onclick="MoveToHome()">
-                    <b>Home page</b>
+                    <b>Home</b>
                 </div>
                 <div onclick="MoveToGeneralInfomation()">
-                    <b>General information</b>
+                    <b>About me</b>
                 </div>
                 <div onclick="MoveToKnowledge()">
                     <b >Knowledge & experience</b>
                 </div>
                 <div onclick="MoveToMotivationList()">
-                    <b>Motivational letter</b>
+                    <b>Motivation</b>
                 </div>
                 <div onclick="MoveToFeedback()">
                     <b>Feedback</b>
@@ -29,23 +29,12 @@
                     <b>Contact</b>
                 </div>
             </div>
-            <div id="links">
-                <div class="link1">
-                    <a href="https://www.facebook.com/profile.php?id=100005656142572" target="_blank" >
-                        <img class="facebook" src="picture/facebook-logo-png-9.png">
-                    </a>
-                </div>
-                <div class="link2">
-                    <a target="_blank" href="https://www.instagram.com/dykyj_hutsul/">
-                        <img class="instagram" src="picture/580b57fcd9996e24bc43c521.png">
-                    </a>
-                </div>
-            </div>
+
         </div>
         <div id="face">
 
             <div class="block1">
-                <img src="picture/IMG_1998.jpg">
+                <img src="picture/IMG_1998.jpg" alt="">
             </div>
             <div class="block2">
                 <span>
@@ -56,20 +45,28 @@
         </div>
         <div id="general_inform">
 
-            <div><h2 align="center">General information</h2></div>
+            <div><h2 align="center">About me</h2></div>
 
             <div>
                 Hello! My name is Denis. I'm 20 years old. Originally from the city of Kolomyia. At the moment I live in Kiev.
                 I study at the 4th year at the National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'
                 on specialty: Automation and computer-integrated technologies. At the moment I study at the PHPacademy in a
-                direction: FullStack Developer.
+                direction: FullStack Developer.<br>
+                For more than 3 years I have been engaged in volunteer activities in the organization of the Iron Volunteers of Ukraine.
+                I helped organize mass events to go in such as <a target="_blank" href="http://www.racenation.ua/home/">Race Nation</a>,
+                <a target="_blank" href="http://kyivmarathon.org/">Wizz Air Kyiv City Marathon</a> etc.<br>
+
+                I worked for Run Ukraine during 1 year, where I was involved in work related to
+                communication with participants of sports races.<br>
+
+                I have an Upper-Intermediate of English. I am fluent in Polish. <br>
             </div>
         </div>
         <div id="knowledge">
 
             <div><h2 align="center">Knowledge & experience</h2></div>
             <div class="b">
-                <ul> I know such programming languages and technology:
+                <ul> I know the following programming languages and technology:
                     <li>C</li>
                     <li>C++</li>
                     <li>C#</li>
@@ -80,16 +77,6 @@
                     <li>MySQL</li>
                     <li>Wordpress</li>
                 </ul>
-
-                For more than 3 years I have been engaged in volunteer activities in the organization of the Iron Volunteers of Ukraine.
-                I helped organize mass events to go in such as <a target="_blank" href="http://www.racenation.ua/home/">Race Nation</a>,
-                <a target="_blank" href="http://kyivmarathon.org/">Wizz Air Kyiv City Marathon</a> etc.<br>
-
-                I worked for Run Ukraine during 1 year, where I was involved in work related to
-                communication with participants of sports races.<br>
-
-                I have an Upper-Intermediate of English. I am fluent in Polish. <br>
-
                 There are some examples of my works: <a target="_blank"  href="http://houseofmusic.com.ua/">House of music</a>,
                 <a target="_blank"  href="https://ironvolunteers.com.ua/"> Iron Volunteers Ukraine</a>
 
@@ -99,53 +86,71 @@
             </div>
             <div class="hidden">
                 <div class="back" onclick="BackPicture()">
-                    <img src="picture/Button-Previous-icon.png" width="100px">
+                    <img src="picture/Button-Previous-icon.png"  alt="">
                 </div>
                 <div class="picture">
                     <!--<img src="picture/9.jpg" width="100%" >    -->
-                    <img class="pic" src="picture/9.jpg" height="100%" >
+                    <img class="pic" src="picture/9.jpg" alt="" >
                 </div>
                 <div class="next" onclick="NextPicture()">
-                    <img src="picture/Hopstarter-Button-Button-Next.ico" width="100px">
+                    <img src="picture/Hopstarter-Button-Button-Next.ico"  alt="">
                 </div>
 
             </div>
 
         </div>
         <div id="motivation">
-            <h2 align="center">Motivation list</h2>
+            <h2 align="center">Motivation</h2>
         </div>
         <div id="contact_form">
             <h2 align="center">Feedback</h2>
             <form>
                     <p>First name
-                    <input type="text" size="30"><br></p>
+                    <input type="text"><br></p>
 
                     <p>Last name
-                    <input type="text" size="30"><br></p>
+                    <input type="text" ><br></p>
 
                     <p>E-mail
-                    <input type="email" size="30"><br></p>
+                    <input type="email" ><br></p>
 
-                    <p>Phone number
-                    <input type="tel" size="30"><br></p>
+                    <p>Phone number  <small>*+(xxx)-xxx-xxx-xxx</small>
+                    <input type="tel" pattern="+([0-9]{3})-[0-9]{3}-[0-9]{3}-[0-9]{3}"><br></p>
 
-                    <p>Sort information
-                    <input type="text" size="30"><br></p>
+                    <p>Short information
+                    <input type="text" ><br></p>
 
-                    <p><input type="button"  value="Send"><br></p>
+                    <p><input type="button" value="Send"><br></p>
 
 
             </form>
         </div>
         <div id="contracts">
-            <h2 align="center">Contact
-                <div>
+            <h2 align="center">Contact</h2>
+            <div class="head">
+                <div >
                     Phone number: +(380) 99 09 47 053;<br>
                     Email: dykyjhutsul@gmail.com;<br>
                     Address: st. Yangela 16, Kyiv, Ukraine
                 </div>
-            </h2>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10162.178413911945!2d30.45051164803911!3d50.449582597600696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc264e744c27%3A0xffe0295efcf9af50!2z0LLRg9C70LjRhtGPINCQ0LrQsNC00LXQvNGW0LrQsCDQr9C90LPQtdC70Y8sIDE2LzIsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1500032111674"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="links">
+            <div class="link1">
+                <a href="https://www.facebook.com/profile.php?id=100005656142572" target="_blank" >
+                    <img class="facebook" src="picture/facebook-logo-png-9.png" alt="">
+                </a>
+            </div>
+            <div class="link2">
+                <a target="_blank" href="https://www.instagram.com/dykyj_hutsul/">
+                    <img class="instagram" src="picture/580b57fcd9996e24bc43c521.png" alt="">
+                </a>
+            </div>
         </div>
 </body>
 </html>

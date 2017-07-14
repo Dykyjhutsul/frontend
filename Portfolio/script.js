@@ -120,12 +120,12 @@ function MoveToKnowledge() {
 
 function MoveToMotivationList() {
     HiddenDiv();
-    window.scroll(0,1765);
+    window.scroll(0,1340);
 }
 
 function MoveToFeedback() {
     HiddenDiv();
-    window.scroll(0,2350);
+    window.scroll(0,1920);
 }
 
 function MoveToContact() {
